@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حملة عتق رقبة | عبدالله غويزي جحيفان الجعيد العتيبي</title>
+    <link rel="icon" href="profile.png" type="image/png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="glass-panel main-header">
+            <div class="logo-area">
+                <img src="profile.png" alt="صورة عبدالله" class="profile-img">
+                <h1>حملة عتق رقبة</h1>
+            </div>
+            <h2 class="person-name">عبدالله غويزي جحيفان الجعيد العتيبي</h2>
+            <p class="subtitle">قال الله تعالى: (وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا)</p>
+        </header>
+
+        <!-- Page Navigation -->
+        <nav class="page-nav standalone">
+            <a href="#progress" class="nav-link"><i class="fa-solid fa-chart-pie"></i> نسبة الإنجاز</a>
+            <a href="#bank" class="nav-link"><i class="fa-solid fa-building-columns"></i> رقم الحساب</a>
+            <a href="#contact" class="nav-link"><i class="fa-solid fa-headset"></i> التواصل</a>
+            <a href="#contributors" class="nav-link"><i class="fa-solid fa-medal"></i> أعلى المساهمين</a>
+        </nav>
+
+        <!-- Progress Section -->
+        <section id="progress" class="glass-panel progress-section">
+            <div class="progress-header">
+                <h3>نسبة الإنجاز</h3>
+                <span class="percentage" id="completion-percentage">0%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar" style="width: 0%">
+                    <div class="progress-glow"></div>
+                </div>
+            </div>
+            <div class="progress-stats">
+                <div class="stat">
+                    <span class="stat-label">إجمال تبرعات الحملة حتى الآن</span>
+                    <div class="stat-amount-container text-green">
+                        <span class="stat-value" id="total-donations">0</span>
+                        <img src="https://www.sama.gov.sa/ar-sa/Currency/Documents/Saudi_Riyal_Symbol-2.svg"
+                            alt="ريال سعودي" class="currency-icon">
+                    </div>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">المبلغ المتبقي</span>
+                    <div class="stat-amount-container text-red">
+                        <span class="stat-value" id="remaining-amount">0</span>
+                        <img src="https://www.sama.gov.sa/ar-sa/Currency/Documents/Saudi_Riyal_Symbol-2.svg"
+                            alt="ريال سعودي" class="currency-icon">
+                    </div>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">الهدف الكلي</span>
+                    <div class="stat-amount-container">
+                        <span class="stat-value" id="total-goal">0</span>
+                        <img src="https://www.sama.gov.sa/ar-sa/Currency/Documents/Saudi_Riyal_Symbol-2.svg"
+                            alt="ريال سعودي" class="currency-icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Grid -->
+        <section class="stats-grid single-stat">
+            <div class="glass-panel stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="stat-info">
+                    <span class="stat-label">عدد المتبرعين</span>
+                    <span class="stat-value" id="donors-count">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bank Accounts Section -->
+        <section id="bank" class="glass-panel bank-accounts">
+            <div class="section-header">
+                <i class="fa-solid fa-building-columns gold-medal"></i>
+                <h3>رقم الحساب</h3>
+            </div>
+
+            <div class="bank-card">
+                <img src="alrajhi_logo.png" alt="مصرف الراجحي" class="bank-logo">
+                <div class="bank-details">
+                    <p><strong class="stat-label" style="color: var(--primary);">الحساب بإسم:</strong> أمارة منطقة مكة
+                        المكرمة دية / رايد زايد سعد
+                        العتيبي</p>
+
+                    <div class="copy-field">
+                        <span class="copy-label">رقم الحساب:</span>
+                        <code>458608010428255</code>
+                        <button onclick="copyText('458608010428255', this)" class="copy-btn" title="نسخ">
+                            <i class="fa-regular fa-clone"></i>
+                        </button>
+                    </div>
+
+                    <div class="copy-field">
+                        <span class="copy-label">رقم الآيبان:</span>
+                        <code>SA7880000458608010428255</code>
+                        <button onclick="copyText('SA7880000458608010428255', this)" class="copy-btn" title="نسخ">
+                            <i class="fa-regular fa-clone"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="glass-panel contact-section">
+            <div class="section-header">
+                <i class="fa-brands fa-whatsapp gold-medal"></i>
+                <h3 class="smaller-title">التواصل والإستفسارات مع اللجنة المالية</h3>
+            </div>
+
+            <div class="contact-grid">
+                <a href="https://wa.me/966579563707" target="_blank" class="contact-card whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>0579563707</span>
+                </a>
+                <a href="https://wa.me/966555708989" target="_blank" class="contact-card whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>0555708989</span>
+                </a>
+                <a href="https://wa.me/966500050787" target="_blank" class="contact-card whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>0500050787</span>
+                </a>
+                <a href="https://wa.me/966554000226" target="_blank" class="contact-card whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>0554000226</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Top Contributors Section -->
+        <section id="contributors" class="glass-panel top-contributors">
+            <div class="section-header">
+                <i class="fa-solid fa-medal gold-medal"></i>
+                <h3>أعلى المساهمين</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="contributors-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>الاسم</th>
+                            <th>المبلغ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contributors-list">
+                        <!-- Rows will be populated by JS -->
+                        <tr>
+                            <td colspan="3" class="loading-text">جارِ التحميل...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>يتم تحديث البيانات تلقائياً</p>
+                <div class="footer-credit">
+                    <p>تصميم وتطوير | مشعل الجعيد</p>
+                </div>
+            </div>
+            <img src="designer_logo.png" alt="شعار المصمم" class="footer-logo">
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
